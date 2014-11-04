@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ /*Descendant combinator*/
+ h1 em{ 
+    background-color: green;
+ }
+ 
+ /*Child combinator*/
+ h1 > p{ 
+   background-color: yellow;
+ }
+
+ /*General sibling combinator*/
+ h1 ~ p{ 
+   background-color: red;
+ }
+ 
+ /*Adjacent sibling combinator*/
+ h1 + p{ 
+   background-color: blue;
+   color: #FFFFFF;
+ }
+</style>
+</head>
+<body>
+<h1>
+<p>This is a paragraph.(Child combinator)</p>
+<p>This is a paragraph.(Child combinator)</p>
+<p>This <em>is (Descendant combinator)</em> a paragraph.(Child combinator)</p>
+</h1>
+<p>This is a paragraph.(Adjacent sibling combinator)</p>
+<p>This is a paragraph.(General sibling combinator)</p>
+<p>This is a paragraph.(General sibling combinator)</p>
+
+</body>
+</html>
